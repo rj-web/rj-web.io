@@ -1,0 +1,22 @@
+{
+  "name": "rks",
+  "version": "1.0.0",
+  "description": "portfolio-my personal website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callmerks/callmerks.github.io.git"
+  },
+  "author": "Rajat Kumar Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callmerks/callmerks.github.io/issues"
+  },
+  "homepage": "https://github.com/callmerks/callmerks.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

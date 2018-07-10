@@ -1,0 +1,59 @@
+.footer{
+    margin-top: -2rem;
+	&__logo{
+	display: block;
+	text-align: center;
+	font-size: 3rem;
+	&--link{
+	color: $color-secondary!important;
+	}
+	} 
+	&__navigation{
+	text-align: center;
+	}
+	&__li{
+	display: inline;
+	padding: 0 2rem;
+	border-right: 1px solid $color-main;
+
+	&:last-child{
+	border-right: none;
+	}
+	}
+	&__links{
+    font-size: 3rem;
+    color: $color-secondary;
+
+    &-facebook{
+    color: #3b5998;
+    }
+    
+    &-instagram{
+    color: #b71a7f;
+    }
+
+    &-linkedin{
+    color: #3b5998;
+    }
+
+    &-dribble{
+    color: #cc5496;
+    }
+
+    &-github{
+    color: #5c6bc0;
+    }
+	}
+}
+
+.more{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__info{
+	margin: 2rem;
+    color: #55e88a;
+    font-size: 1.4rem;
+	}
+}

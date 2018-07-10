@@ -1,0 +1,84 @@
+.header{
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 0.6)),
+	url("../images/header-background.jpg") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
+    filter: brightness(.85);
+    height: 100vh;
+	position: relative;
+	color: $color-main;
+	z-index: 1;
+
+    animation: moveInDown .5s ease-out;
+    
+    // LOGO
+	&__logo{
+    animation: moveInRight 1.5s ease-out;
+    font-size: 2rem;
+    padding: 2rem;
+	}
+    // IMAGES
+	&__image{
+	width: 25%;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba($color-grey, 0.4);
+    transition: all .2s;
+    outline-offset: 1rem;
+
+    &:hover{
+    outline: .5rem solid $color-dark;
+    transform: scale(1.05);
+    z-index: 20;
+    }
+	&--number1{
+    left: 17%;
+    top: 18rem;
+	}
+	&--number2{
+	left: 36%;
+    top: 10rem;
+	}
+	&--number3{
+	left: 53%;
+    top: 20rem;
+	}
+	}
+    // TYPO
+    &__heading{
+    font-size: 2rem;
+    padding: 2rem;
+    display: table;
+    padding: 0rem 2rem;
+    position: absolute;
+	top: 40vh;
+	left: 50%;
+	transform: translateX(-50%);
+	&__primary{
+	display: block;
+	line-height: 2;
+	}
+	&__sub{
+	display: block;
+	}
+	&__btn{
+	display: inline-block;
+	}
+}
+}
+
+
+
+
+.rks{
+	font-size: 30rem;
+	text-transform: uppercase;
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url("../images/grass.jpg");
+    background-position: center;
+    font-family: fantasy;
+}

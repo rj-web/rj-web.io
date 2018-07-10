@@ -1,0 +1,96 @@
+@mixin clearfix{
+	&::after{
+	content: "";
+	display: table;
+	clear: both;
+	}
+}
+
+// MEDIA QUERY
+
+/*
+0 - 600 = phone
+600-900 = tablet portrait
+900 - 1200 = tablet landscape
+1200 - 1800 = desktop // with the normal styles
+more than 1800 =  Big Desktop
+*/ 
+
+
+/*
+- phone
+- ipad
+- ipad-pro
+- big-desktop
+*/
+@mixin device($breakpoint){
+    @if $breakpoint == xsm-phone {
+	  @media (max-width: 33.75em) {@content};
+	}
+	@if $breakpoint == phone {
+	  @media (max-width: 658px) {@content};
+	}
+	// 768px
+	@if $breakpoint == ipad {
+	  @media (max-width: 48em) {@content};  
+	}
+	// 900px
+	@if $breakpoint == tab-landscape {
+	  @media (max-width: 56.25em) {@content}; 
+	}
+	// 1024px
+	@if $breakpoint == ipad-pro {
+	  @media (max-width: 64em) {@content}; 
+	}
+	@if $breakpoint == big-desk {
+	  @media (min-width: 112.5em) {@content};
+	}
+}
+
+
+
+
+// MIXIN FOR SMALL BUTTONS
+	@mixin btn-sm{
+    text-decoration: none;
+	padding: 0 1rem;
+	border-radius: 3rem;
+	display: inline-block;
+	}
+// BUTTON MIXIN ENDS HERE
+
+// MIXIN FOR BACKGROUND IMAGES
+	@mixin bgMainImg{
+    background: linear-gradient(
+    to right bottom, 
+    rgba($color-main, 0.9), 
+    rgba($color-dark, 0.9)),
+	url("../images/header-background.png") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
+	}
+
+	@mixin bgDarkImg{
+    background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.2), 
+    rgba($color-dark, 0.2)),
+	url("../images/header-background.png") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
+	}
+// BACKGROUND IMAGES MIXIN ENDS HERE
+
+
+// EXPERIENCE HEADINGS
+@mixin experience-heading{
+    color: $color-white;
+	font-weight: 300;
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    padding: 5rem 0 6.6rem;
+    border-bottom: 1px solid $color-main;
+    }
+// EXPERINCE HEADING ENDS HERE

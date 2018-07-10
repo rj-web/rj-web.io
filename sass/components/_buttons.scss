@@ -1,0 +1,86 @@
+.btn{
+    z-index: 200;
+    
+    // BUTTON-WHITE-COLOR
+    &__green{
+
+	&--sm{
+	&:link,
+	&:visited{
+	@include btn-sm;
+	border: 2px solid $color-main;
+    background: transparent;
+	color: $color-main;
+	transition: all .4s ease;
+	}
+    &:hover{
+    color: $color-white;
+    background: $color-main;
+    }
+	}
+	}
+	@mixin btn-rec{
+	border-radius: inherit;
+	transition: all .2s ease;
+	&:hover{
+    background: transparent;
+	border-radius: inherit;
+	}
+	}
+	// BUTTON-WHITE-COLOR
+	&__mainBtn{
+	&--sm{
+	&:link,
+	&:visited{
+	@include btn-sm;
+	@include btn-rec;
+	color: $color-main;
+	border-left: 2px solid $color-main;
+	}
+	&:hover{
+	color: $color-main;
+	border-bottom: 2px solid $color-main;
+	border-left: 2px solid $color-main;
+	}
+	}
+	}
+	// BUTTON-DARK-COLOR
+	&__darkBtn{
+	&--sm{
+	&:link,
+	&:visited{
+	@include btn-sm;
+	@include btn-rec;
+	color: $color-main;
+	border-left: 2px solid $color-main;
+	}
+	&:hover{
+	border-bottom: 2px solid $color-main;
+	border-left: 2px solid $color-main;
+	color: $color-main;
+	}
+	}
+	}
+}
+
+
+#mc_embed_signup{
+	display: block;
+}
+#mc-embedded-subscribe{
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	color: $color-main;
+	border-left: 2px solid $color-main;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: all .4s ease;
+	&:hover{
+	border-bottom: 2px solid $color-main;
+	}
+
+}
+.mc-embed-div{
+	text-align: center;
+}

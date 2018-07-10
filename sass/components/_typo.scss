@@ -1,0 +1,53 @@
+
+
+// TEXT-BOXES - TEXT
+
+
+.heading{
+// CONTENT-HEADING-TEXT-MIXIN
+	@mixin heading-text{
+	font-size: 4rem;
+	text-transform: uppercase;
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+	}
+    &__onMainBg{
+	&--main{
+	//MIXIN ENDS HERE
+	@include heading-text;
+	background-image: linear-gradient(to right bottom, 
+	rgba($color-main, 0.9), 
+	rgba($color-secondary, 0.9));
+	background-attachment: fixed;
+	}
+	&--sub{
+	display: block;
+	}
+	}
+	&__onDarkBg{
+    &--main{
+    @include heading-text;
+	background-image: linear-gradient(to left, 
+	rgba($color-secondary, 0.8), 
+	rgba($color-main, 0.8));
+    }
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-cursive{
+	font-family: 'Satisfy', cursive;
+}
+
+.text-cinzel{
+	font-family: 'Cinzel', serif;
+	font-weight: 700;
+}
+
+.opacity{
+	opacity: .7;
+}

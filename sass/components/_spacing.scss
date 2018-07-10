@@ -1,0 +1,36 @@
+// MARGIN/ PADDING
+.section-padding{
+	padding: 6rem 2rem 9rem 2rem;
+}
+
+.margin-top-sm{
+	margin-top: 2rem;
+}
+
+.margin-top-m{
+	margin-top: 4rem;
+}
+
+.margin-top-lg{
+	margin-top: 8rem;
+}
+
+
+.margin-bottom-sm{
+	margin-bottom: 2rem;
+}
+
+.margin-bottom-m{
+	margin-bottom: 4rem;
+}
+
+.margin-bottom-lg{
+	margin-bottom: 8rem;
+}
+
+// PARAGRAPH SPACING
+.paragraph{
+	&:last-child{
+	margin-bottom: 0;
+	}
+}
